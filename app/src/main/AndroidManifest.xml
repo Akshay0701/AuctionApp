@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.auctionapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/auctionlogo2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/auctionlogo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AuctionApp">
+        <activity android:name=".Admin.AllPlacedProducts"></activity>
+        <activity android:name=".Admin.AllProductsAdmin" />
+        <activity android:name=".Admin.AllUsers" />
+        <activity android:name=".User.UserAccount" />
+        <activity android:name=".Seller.SellerProductDetails" />
+        <activity android:name=".User.ProductDetails" />
+        <activity android:name=".Seller.SellerAccount" />
+        <activity android:name=".Seller.PlacedOrders" />
+        <activity android:name=".Seller.ViewProducts" />
+        <activity android:name=".Seller.AddProducts" />
+        <activity
+            android:name=".Admin.AdminDashBoard"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Seller.SellerDashBoard"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".User.HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/Theme.AuctionApp.NoActionBar" />
+        <activity
+            android:name=".Seller.SellerLogin"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".User.UserLogin"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Admin.AdminLogin"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Seller.SellerRegister"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".User.UserRegister"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
